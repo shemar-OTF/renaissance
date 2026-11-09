@@ -56,3 +56,12 @@ Downloadresolutie: 1800 pixels breed, via de officiële IIIF-beeldservice van he
 - Inhoudelijke bron: [Vaticaanse Musea — School of Athens](https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html).
 
 De lokale JPEG is verkleind tot 1800 pixels breed. Op de pagina blijft de volledige beeldverhouding behouden, zodat de architectuur en de figuren niet door een portretuitsnede wegvallen. Het beeld is niet met AI bewerkt.
+
+## Schilderij op Contact
+
+`assets/artworks/renaissance-michelangelo-handen.jpg` is het handendetail uit **De schepping van Adam** van Michelangelo, passend bij de door de gebruiker aangeleverde referentie.
+
+- Beeldbron en licentie: [Wikimedia Commons — Creation of Adam (Michelangelo) Detail.jpg](https://commons.wikimedia.org/wiki/File:Creation_of_Adam_(Michelangelo)_Detail.jpg). De reproductie staat vermeld als publiek domein (PD-Art / Public Domain Mark).
+- Download: [origineel JPEG-bestand](https://upload.wikimedia.org/wikipedia/commons/3/39/Creation_of_Adam_%28Michelangelo%29_Detail.jpg), 1400 × 1047 pixels.
+
+Het bestand is ongewijzigd lokaal opgeslagen. Op de Contact-pagina wordt het met CSS als een breed handendetail weergegeven. Het beeld is niet met AI bewerkt.
