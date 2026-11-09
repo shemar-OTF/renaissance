@@ -111,3 +111,69 @@ if (slideshow) {
   controls.hidden = false;
   scheduleSlideshow();
 }
+
+// Het contactformulier controleert alleen de invoer: er wordt niets verzonden.
+const contactForm = document.querySelector('#contact-form');
+
+if (contactForm) {
+  const fields = [...contactForm.querySelectorAll('input, textarea')];
+  const fieldset = contactForm.querySelector('#contact-fields');
+  const confirmation = contactForm.querySelector('#contact-confirmation');
+  const errorIds = {
+    'contact-name': 'name-error',
+    'contact-email': 'email-error',
+    'contact-message': 'message-error',
+  };
+
+  function validateContactField(field) {
+    const error = contactForm.querySelector(`#${errorIds[field.id]}`);
+    let message = '';
+
+    if (!field.value.trim()) {
+      const emptyMessages = {
+        'contact-name': 'Vul je naam in.',
+        'contact-email': 'Vul je e-mailadres in.',
+        'contact-message': 'Schrijf een bericht.',
+      };
+      message = emptyMessages[field.id];
+    } else if (field.type === 'email' && field.validity.typeMismatch) {
+      message = 'Vul een geldig e-mailadres in, bijvoorbeeld naam@voorbeeld.nl.';
+    } else if (field.maxLength > 0 && field.value.length > field.maxLength) {
+      message = `Gebruik maximaal ${field.maxLength} tekens.`;
+    }
+
+    error.textContent = message;
+    error.hidden = !message;
+    if (message) {
+      field.setAttribute('aria-invalid', 'true');
+    } else {
+      field.removeAttribute('aria-invalid');
+    }
+    return !message;
+  }
+
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    confirmation.hidden = true;
+    const invalidFields = fields.filter((field) => !validateContactField(field));
+    if (invalidFields.length) {
+      invalidFields[0].focus();
+      return;
+    }
+
+    confirmation.textContent = 'Het formulier is goed ingevuld. Dit is een demonstratie: je bericht is niet verzonden of opgeslagen.';
+    confirmation.hidden = false;
+    confirmation.focus();
+  });
+
+  fields.forEach((field) => {
+    field.addEventListener('input', () => {
+      confirmation.hidden = true;
+      if (field.getAttribute('aria-invalid') === 'true') validateContactField(field);
+    });
+  });
+
+  // Zonder JavaScript blijven de velden uitgeschakeld om verzending te voorkomen.
+  contactForm.noValidate = true;
+  fieldset.disabled = false;
+}
