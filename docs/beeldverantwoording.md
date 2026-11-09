@@ -46,3 +46,13 @@ De drie foto's van schilderijen komen uit de open collectie van de National Gall
 | `assets/artworks/renaissance-giorgione.jpg` | Giorgione, *The Adoration of the Shepherds*, 1505–1510. Samuel H. Kress Collection, 1939.1.289. | [National Gallery of Art](https://www.nga.gov/artworks/432-adoration-shepherds) |
 
 Downloadresolutie: 1800 pixels breed, via de officiële IIIF-beeldservice van het museum. In iedere dia is een link naar de originele objectpagina opgenomen.
+
+## Schilderij op Over ons
+
+`assets/artworks/renaissance-rafael-school-van-athene.jpg` toont **De school van Athene** van Rafaël (1511), uit de Stanza della Segnatura in het Vaticaan. Dit is een van de drie door de gebruiker voorgestelde werken. Het vervangt het eerder hergebruikte beeld van Botticelli op Over ons; de Home-slideshow blijft ongewijzigd.
+
+- Beeldbron: [Wikimedia Commons — Raphael School of Athens.jpg](https://commons.wikimedia.org/wiki/File:Raphael_School_of_Athens.jpg). De bestandsbeschrijving duidt deze reproductie aan als publiek domein (PD-Art / Public Domain Mark).
+- Origineel bestand: [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/c/c3/Raphael_School_of_Athens.jpg).
+- Inhoudelijke bron: [Vaticaanse Musea — School of Athens](https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html).
+
+De lokale JPEG is verkleind tot 1800 pixels breed. Op de pagina blijft de volledige beeldverhouding behouden, zodat de architectuur en de figuren niet door een portretuitsnede wegvallen. Het beeld is niet met AI bewerkt.
