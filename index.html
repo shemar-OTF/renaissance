@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1ea">
+    <meta name="description" content="RENAISSANCE. Begin Again. Een nieuw begin, geïnspireerd door het verleden. Ontdek het eerste longsleeve-ontwerp.">
+    <title>RENAISSANCE — Begin Again.</title>
+    <link rel="icon" type="image/png" href="assets/logos/renaissance-lelie-vervaagd.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Ga naar de inhoud</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="RENAISSANCE — naar Home">
+          <img class="brand-symbol" src="assets/logos/renaissance-lelie-vervaagd.png" width="42" height="35" alt="">
+          <span>RENAISSANCE</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>
+          <span class="menu-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Hoofdnavigatie">
+          <a class="nav-link" href="#home" aria-current="page">Home</a>
+          <span class="nav-link nav-link--upcoming" aria-disabled="true">Collectie<span class="upcoming-label">Binnenkort</span></span>
+          <span class="nav-link nav-link--upcoming" aria-disabled="true">Ons verhaal<span class="upcoming-label">Binnenkort</span></span>
+          <span class="nav-link nav-link--upcoming" aria-disabled="true">Contact<span class="upcoming-label">Binnenkort</span></span>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="slideshow" aria-label="RENAISSANCE — kunst en slogans" aria-roledescription="carrousel">
+          <h1 class="visually-hidden">RENAISSANCE — Begin Again.</h1>
+
+          <figure class="slide" aria-roledescription="dia" aria-label="1 van 3: Begin Again.">
+            <img class="slide-image" src="assets/artworks/renaissance-botticelli.jpg" width="1800" height="1197" alt="Renaissanceschilderij van Botticelli: mensen in kleurrijke gewaden verzamelen zich bij een klassieke ruïne in een groen landschap." fetchpriority="high">
+            <div class="slide-copy">
+              <p class="eyebrow">RENAISSANCE / Een nieuw hoofdstuk</p>
+              <p class="slide-slogan">Begin<br><em>Again.</em></p>
+            </div>
+            <figcaption class="artwork-credit"><a href="https://www.nga.gov/artworks/24-adoration-magi" target="_blank" rel="noopener noreferrer">Sandro Botticelli · The Adoration of the Magi · ca. 1478–1482<span class="visually-hidden"> (opent in een nieuw tabblad)</span></a></figcaption>
+          </figure>
+
+          <figure class="slide" aria-roledescription="dia" aria-label="2 van 3: The Art of Renewal." hidden>
+            <img class="slide-image slide-image--bellini" src="assets/artworks/renaissance-bellini-titian.jpg" width="1800" height="1649" alt="Renaissanceschilderij van Bellini en Titiaan: mythologische figuren in kleurrijke kleding aan een feestmaal tussen bomen en rotsen." loading="lazy">
+            <div class="slide-copy">
+              <p class="eyebrow">RENAISSANCE / Kunst als inspiratie</p>
+              <p class="slide-slogan slide-slogan--long">The Art<br><em>of Renewal.</em></p>
+            </div>
+            <figcaption class="artwork-credit"><a href="https://www.nga.gov/artworks/1138-feast-gods" target="_blank" rel="noopener noreferrer">Giovanni Bellini &amp; Titiaan · The Feast of the Gods · 1514–1529<span class="visually-hidden"> (opent in een nieuw tabblad)</span></a></figcaption>
+          </figure>
+
+          <figure class="slide" aria-roledescription="dia" aria-label="3 van 3: The Past Wears Forward." hidden>
+            <img class="slide-image slide-image--giorgione" src="assets/artworks/renaissance-giorgione.jpg" width="1800" height="1472" alt="Renaissanceschilderij van Giorgione: herders bij Maria en het kind, met een rotswand en een weids landschap met een rivier." loading="lazy">
+            <div class="slide-copy">
+              <p class="eyebrow">RENAISSANCE / Het verleden leeft verder</p>
+              <p class="slide-slogan slide-slogan--long">The Past<br><em>Wears Forward.</em></p>
+            </div>
+            <figcaption class="artwork-credit"><a href="https://www.nga.gov/artworks/432-adoration-shepherds" target="_blank" rel="noopener noreferrer">Giorgione · The Adoration of the Shepherds · 1505–1510<span class="visually-hidden"> (opent in een nieuw tabblad)</span></a></figcaption>
+          </figure>
+
+          <a class="slide-discover" href="#eerste-ontwerp">Ontdek de longsleeve <span aria-hidden="true">↗</span></a>
+
+          <fieldset class="slideshow-controls" hidden>
+            <legend class="visually-hidden">Bediening slideshow</legend>
+            <button class="slide-arrow" id="previous-slide" type="button" aria-label="Vorige dia">←</button>
+            <div class="slide-dots">
+              <button class="slide-dot" type="button" aria-label="Toon dia 1: Begin Again." aria-pressed="true" data-slide="0"></button>
+              <button class="slide-dot" type="button" aria-label="Toon dia 2: The Art of Renewal." aria-pressed="false" data-slide="1"></button>
+              <button class="slide-dot" type="button" aria-label="Toon dia 3: The Past Wears Forward." aria-pressed="false" data-slide="2"></button>
+            </div>
+            <button class="slide-arrow" id="next-slide" type="button" aria-label="Volgende dia">→</button>
+          </fieldset>
+          <output class="visually-hidden" id="slide-status"></output>
+        </section>
+
+        <section class="designs" id="eerste-ontwerp" tabindex="-1" aria-labelledby="designs-title" aria-describedby="designs-note">
+          <h2 class="visually-hidden" id="designs-title">De longsleeve in vier kleuren</h2>
+          <p class="visually-hidden" id="designs-note">Conceptvisualisaties van de vier kleurvarianten.</p>
+          <ul class="product-grid">
+            <li class="product-card product-card--black">
+              <figure>
+                <img class="product-card-image" src="assets/products/longsleeve-zwart.jpg" width="1536" height="1024" alt="Concept van een gewassen zwarte longsleeve met een kleine ivoorwitte lelie op de linkerborst." loading="lazy" decoding="async">
+                <figcaption class="product-card-caption">
+                  <h3>The Longsleeve.</h3>
+                  <p>Kleur: Gewassen zwart</p>
+                  <p class="product-logo-color"><span class="product-colors" aria-hidden="true"><span></span><span></span></span>Ivoorwit logo</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="product-card product-card--green">
+              <figure>
+                <img class="product-card-image" src="assets/products/longsleeve-groen.jpg" width="1536" height="1024" alt="Concept van een gedempt groene longsleeve met een kleine zwarte lelie op de linkerborst." loading="lazy" decoding="async">
+                <figcaption class="product-card-caption">
+                  <h3>The Longsleeve.</h3>
+                  <p>Kleur: Wouwgroen</p>
+                  <p class="product-logo-color"><span class="product-colors" aria-hidden="true"><span></span><span></span></span>Zwart logo</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="product-card product-card--white">
+              <figure>
+                <img class="product-card-image" src="assets/products/longsleeve-wit.jpg" width="1536" height="1024" alt="Concept van een linnenwitte longsleeve met een kleine karmijnroze lelie op de linkerborst." loading="lazy" decoding="async">
+                <figcaption class="product-card-caption">
+                  <h3>The Longsleeve.</h3>
+                  <p>Kleur: Linnenwit</p>
+                  <p class="product-logo-color"><span class="product-colors" aria-hidden="true"><span></span><span></span></span>Karmijnroze logo</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="product-card product-card--blue">
+              <figure>
+                <img class="product-card-image" src="assets/products/longsleeve-blauw.jpg" width="1536" height="1024" alt="Concept van een diepblauwe longsleeve met een kleine wouwgele lelie op de linkerborst." loading="lazy" decoding="async">
+                <figcaption class="product-card-caption">
+                  <h3>The Longsleeve.</h3>
+                  <p>Kleur: Wedeblauw</p>
+                  <p class="product-logo-color"><span class="product-colors" aria-hidden="true"><span></span><span></span></span>Wouwgeel logo</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p class="footer-label">RENAISSANCE <span aria-hidden="true">/</span> BEGIN AGAIN.</p>
+        <p class="footer-slogan">The Past Wears Forward.</p>
+        <a class="back-to-top" href="#home">Naar boven <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+  </body>
+</html>
