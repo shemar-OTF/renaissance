@@ -18,7 +18,7 @@ if (menuToggle && navigation) {
     setMenuOpen(!isOpen);
   });
 
-  // Na het kiezen van Home blijft het mobiele menu niet in beeld staan.
+  // Na het kiezen van een pagina blijft het mobiele menu niet in beeld staan.
   navigation.addEventListener('click', (event) => {
     if (event.target.closest('a')) {
       setMenuOpen(false);
